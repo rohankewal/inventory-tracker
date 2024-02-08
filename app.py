@@ -5,7 +5,7 @@ from werkzeug.security import generate_password_hash
 app = Flask(__name__)
 
 
-# TODO: Setup database for creating and logging in users
+# Setup database for creating and logging in users
 conn = sqlite3.connect("users.db")
 cursor = conn.cursor()
 cursor.execute(
