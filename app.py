@@ -26,5 +26,10 @@ def index():
     return render_template("index.html", first_name=name)
 
 
+@app.route("/inventory")
+def inventory():
+    return render_template("inventory.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
