@@ -26,9 +26,9 @@ def index():
     return render_template("index.html", first_name=name)
 
 
-@app.route("/inventory")
+@app.route("/purchase_orders")
 def inventory():
-    return render_template("inventory.html")
+    return render_template("po.html")
 
 
 if __name__ == "__main__":
